@@ -9,8 +9,9 @@
   },
   "scripts": {
       "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
-  "heroku-postbuild": "echo This runs afterwards.",
-    "postinstall": "npm build",
+  "heroku-postbuild": "ls -al",
+    "preinstall": "echo This runs before install.",
+    "postinstall": "echo This runs before install.",
     "dev": "node server; echo pwd; ls -al",
     "start": "cross-env NODE_ENV=production node server",
     "build": "npm run build:client && npm run build:server",

@@ -6,7 +6,7 @@ module.exports = Object.assign({}, base, {
   devtool: false,
   entry: './src/server-entry.js',
   output: Object.assign({}, base.output, {
-    filename: 'server-bundle.js',
+    filename: '../dist/server-bundle.js',
     libraryTarget: 'commonjs2'
   }),
   externals: Object.keys(require('../package.json').dependencies),

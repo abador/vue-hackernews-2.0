@@ -8,6 +8,8 @@
     "npm": "3.5.2"
   },
   "scripts": {
+      "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
+  "heroku-postbuild": "echo This runs afterwards.",
     "postinstall": "npm build",
     "dev": "node server; echo pwd; ls -al",
     "start": "cross-env NODE_ENV=production node server",
